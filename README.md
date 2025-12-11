@@ -16,6 +16,14 @@ The goal of this project is to manage **LVM logical volumes (LVs)** efficiently 
 5. Alerting the administrator when manual intervention is required.
 
 ---
+Requirements
+
+Lubuntu Linux
+
+LVM2 (sudo apt install lvm2)
+
+Root privileges or sudo
+---
 
 ## **Project Structure**
 
