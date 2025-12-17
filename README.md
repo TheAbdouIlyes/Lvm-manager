@@ -92,6 +92,7 @@ in /etc/fstab we add entries with uuid (we add uuid to ensure that the system al
 ```
 UUID=e4f5b6d7-1234-5678-9abc-def012345678 /mnt/data1 ext4 defaults 0 2
 ```
+same with data2 data3
 
 ### 5. C programms :
 
