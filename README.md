@@ -71,6 +71,7 @@ sudo mkfs.ext4 /dev/ilyes_vg/data1
 sudo mkdir -p /mnt/data1
 sudo mount /dev/ilyes_vg/data1 /mnt/data1
 ```
+( same with data2 data3)
 
 Entries are added to /etc/fstab to make mounts persistent.
 
