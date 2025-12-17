@@ -72,8 +72,16 @@ Each LV is formatted with ext4 and mounted:
 sudo mkfs.ext4 /dev/ilyes_vg/data1
 sudo mkdir -p /mnt/data1
 sudo mount /dev/ilyes_vg/data1 /mnt/data1
+
+sudo mkfs.ext4 /dev/ilyes_vg/data2
+sudo mkdir -p /mnt/data2
+sudo mount /dev/ilyes_vg/data2 /mnt/data2
+
+sudo mkfs.ext4 /dev/ilyes_vg/data3
+sudo mkdir -p /mnt/data3
+sudo mount /dev/ilyes_vg/data3 /mnt/data3
+
 ```
-( same with data2 data3)
 
 Entries are added to /etc/fstab to make mounts persistent.
 
@@ -123,7 +131,7 @@ Logs actions to /var/log/lvm_monitor.log
 
 Monitoring is automated with cron, running every 2 minutes:
 ```bash
-*/2 * * * * /usr/local/bin/lvm_monitor 80 >> /var/log/lvm_monitor.log 2>&1
+*/2 * * * * /usr/local/bin/lvm_monitor 80
 ```
 ### Intelligent Decision Flow
 
